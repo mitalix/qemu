@@ -1,5 +1,5 @@
 # qemu and ipxe
-qemu documentation
+
 
 Working config:
 
