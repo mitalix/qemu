@@ -10,11 +10,20 @@ sudo ip link add name br0 type bridge
 sudo ip addr add 172.20.0.1/16 dev br0    
 sudo ip link set br0 up    
 ```
+
+Install dnsmasq:
+```
 sudo pacman -Ss dnsmasq
+```
+Check the status and run ...
+```
 systemctl status dnsmasq  
 sudo systemctl start dnsmasq  
+```
+Open another window to view the continuous logging
+```
 journalctl -fu dnsmasq.service  
-
+```
 
 $ grep -v ^# /etc/dnsmasq.conf | strings  
 ```
@@ -27,9 +36,9 @@ log-dhcp
 pxe-service=x86PC,"PXELINUX (BIOS)",boot/pxelinux  
 tftp-secure  
 ```
-
+```
 $ qemu-system-x86_64 -nic bridge,br=br0,model=virtio-net-pci -m 1G
-
+```
 in another window:  <br>
 $ vncviewer :5900
 
