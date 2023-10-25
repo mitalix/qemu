@@ -29,7 +29,7 @@ tftp-secure
 
 $ qemu-system-x86_64 -nic bridge,br=br0,model=virtio-net-pci -m 1G
 
-in another window:
+in another window:  <br>
 $ vncviewer :5900
 
 
