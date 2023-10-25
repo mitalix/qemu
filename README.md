@@ -33,7 +33,7 @@ in another window:  <br>
 $ vncviewer :5900
 
 
-$ tree /srv/tftp/  
+<p>$ tree /srv/tftp/  
 /srv/tftp/  
 ├── boot  
     ├── initramfs-linux.img  
@@ -41,6 +41,7 @@ $ tree /srv/tftp/
     ├── pxelinux.cfg  
     │   └── default  
     └── vmlinuz-linux  
+</p>
 
 $ cat /srv/tftp/boot/pxelinux.cfg/default   
 DEFAULT linux  
