@@ -6,9 +6,9 @@ Working config:
 Qemu with basic network bridge and dnsmasq over ipxe
 
 
-sudo ip link add name br0 type bridge  
-sudo ip addr add 172.20.0.1/16 dev br0  
-sudo ip link set br0 up  
+sudo ip link add name br0 type bridge    
+sudo ip addr add 172.20.0.1/16 dev br0    
+sudo ip link set br0 up    
 
 
 systemctl status dnsmasq  
