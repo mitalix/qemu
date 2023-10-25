@@ -33,7 +33,8 @@ in another window:  <br>
 $ vncviewer :5900
 
 
-<p>$ tree /srv/tftp/  
+
+```$ tree /srv/tftp/  
 /srv/tftp/  
 ├── boot  
     ├── initramfs-linux.img  
@@ -41,8 +42,7 @@ $ vncviewer :5900
     ├── pxelinux.cfg  
     │   └── default  
     └── vmlinuz-linux  
-</p>
-
+```
 $ cat /srv/tftp/boot/pxelinux.cfg/default   
 DEFAULT linux  
         SAY Now booting the kernel from SYSLINUX ...  
