@@ -25,7 +25,10 @@ Open another window to view the continuous logging
 journalctl -fu dnsmasq.service  
 ```
 
-$ grep -v ^# /etc/dnsmasq.conf | strings  
+Through trial and error, these options just worked together in /etc/dnsmasq.conf: 
+```
+$ grep -v ^# /etc/dnsmasq.conf | strings
+```  
 ```
 interface=br0  
 bind-interfaces  
