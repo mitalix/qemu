@@ -52,7 +52,9 @@ $ qemu-system-x86_64 -nic bridge,br=br0,model=virtio-net-pci -m 1G
 in another window:  <br>
 $ vncviewer :5900
 
+To get the kernel and initramfs, see this post to download and copy those files into the tftp tree below
 
+https://github.com/mitalix/qemu-debian-buster
 
 ```
 $ tree /srv/tftp/  
